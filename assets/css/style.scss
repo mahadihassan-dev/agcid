@@ -1,0 +1,122 @@
+// Import other components of SCSS
+@import 'mixin';
+@import 'varribale';
+@import 'breakpoint';
+
+/* Reset CSS Start */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.clr {
+    clear: both; // this class will help to remove DIV Space Conflict.
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+
+/* Reset CSS End */
+
+
+/*Card Section Start*/
+
+.card_wrapper {
+    background: #E7F0F8;
+    padding: 70px 0px 70px 0px;
+    // Card Container
+    .card_container {
+        width: 1530px;
+        margin: auto;
+        // Card Section: Section Title
+        .card_title {
+            text-align: center;
+            .card_section_title {
+                position: relative;
+                font-size: 40px;
+                &::after {
+                    position: absolute;
+                    content: url(../images/linea.png);
+                    bottom: -55px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        // Card Section: Card Row
+        .card_row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 60px;
+            .card_col {
+                width: 25%;
+                margin-right: 25px;
+                .card_body {
+                    background: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+                    transition: all linear .3s;
+                    .card_thumbnail {
+                        .card_thumb {
+                            border-radius: 10px 10px 0px 0px;
+                        }
+                    }
+                    .card_content {
+                        padding: 30px;
+                        .card_post_date {
+                            color: #989898;
+                            font-weight: 400;
+                            font-size: 14px;
+                        }
+                        .card_content_main {
+                            margin-top: 10px;
+                            font-size: 18px;
+                            color: #0F69B4;
+                            font-weight: 600;
+                        }
+                    }
+                    &:hover {
+                        transform: translate(0px, -10px);
+                        cursor: pointer;
+                    }
+                }
+                &:nth-child(4) {
+                    margin-right: 0;
+                }
+            }
+        }
+        // Card Container: read More Button
+        .card_readmore_btn {
+            text-align: center;
+            .cr_btn {
+                display: block;
+                margin: auto;
+                width: 286px;
+                height: 68px;
+                line-height: 68px;
+                background: #0F69B4;
+                border-radius: 10px;
+                color: #fff;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+/*Card Section End*/
+
+.test_btn {
+    background: $third-color;
+}

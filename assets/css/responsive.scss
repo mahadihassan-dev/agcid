@@ -1,0 +1,115 @@
+// Import other components of SCSS
+@import 'mixin';
+@import 'varribale';
+@import 'breakpoint';
+// Small Device to Medium Category device Started 
+@media only screen and (max-width: $small-device) {
+    .card_wrapper {
+        .card_container {
+            width: 315px;
+            .card_row {
+                flex-direction: column;
+                .card_col {
+                    width: 100%;
+                    // width: 95%;
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+// Medium device Category Started 
+@media only screen and (min-width: $small-device) and (max-width: $medium-device) {
+    .card_wrapper {
+        .card_container {
+            width: 315px;
+            .card_row {
+                flex-direction: column;
+                .card_col {
+                    width: 100%;
+                    // width: 95%;
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+// Medium device Category Started 
+@media only screen and (min-width: $medium-device) and (max-width: $medium-device-A) {
+    .card_wrapper {
+        .card_container {
+            width: 315px;
+            .card_row {
+                flex-direction: column;
+                .card_col {
+                    width: 100%;
+                    // width: 95%;
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+// Laptop device Category Started 
+@media only screen and (min-width: $laptop-device) and (max-width: $laptop-device-A) {
+    .card_wrapper {
+        .card_container {
+            width: 950px;
+            .card_row {
+                .card_col {
+                    .card_body {
+                        .card_content {
+                            .card_post_date {
+                                font-size: 9px;
+                            }
+                            .card_content_main {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Laptop device Category Started - B
+@media only screen and (min-width: $laptop-device-B) and (max-width: $laptop-device-C) {
+    .card_wrapper {
+        .card_container {
+            width: 950px;
+            .card_row {
+                .card_col {
+                    .card_body {
+                        .card_content {
+                            .card_post_date {
+                                font-size: 9px;
+                            }
+                            .card_content_main {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Laptop device Category Started - C
+@media only screen and (min-width: $large-diplay-D) and (max-width: $large-diplay-E) {
+    .card_wrapper {
+        .card_container {
+            width: 1335px;
+        }
+    }
+}
